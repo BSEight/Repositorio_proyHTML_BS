@@ -1,0 +1,264 @@
+/* 
+    Created on : 20/09/2022, 07:54:42 PM
+    Author     : eight
+*/
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding:  25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#Principal{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("img/BannerPrincipal2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Principal h1{
+    color: white;
+}
+
+.color-principal{color:blueviolet }
+
+#Perfil .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Actividades{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Actividades iframe{
+    border: none;
+}
+
+
+#Actividades .container{
+    padding: 100px 0px;
+}
+
+#Actividades .container table, #Actividades .container th, #Actividades .container td{
+    border-style: groove;
+    border-color: blueviolet;
+    border-collapse: collapse;
+}
+
+#Actividades .container caption , th, td{
+    padding: 15px;
+}
+
+#Actividades .container th{
+    font-size: 1.6em;
+}
+
+#Actividades caption{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#Actividades h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Contenido .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#Contenido h2{
+    color: blueviolet;
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Contenido p{
+    padding: 20px 0px;
+}
+
+#Redes{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("img/redesSociales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Redes h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Redes .container{
+    padding: 100px 0px;
+}
+
+#Contacto .container{
+    text-align: center;
+    padding: 100px 0px;
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    text-align: center;
+    margin: 0;
+    font-size: 0.7em;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    
+    #Perfil .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #Perfil .texto{
+        padding: 0px 30px;
+        padding-left: 50px;
+        width: 50%;
+        text-align: initial;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #Perfil .img-container{
+        background-image: url("img/FotoPerfil.jpg");
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    
+    #Actividades h2{
+        font-size: 4em;
+    }
+    
+    #Contenido h2{
+        font-size: 4em;
+    }
+    
+    #Redes h2{
+        font-size: 4em;
+    }
+    
+    #Contacto h2{
+        font-size: 4em;
+    }
+}
